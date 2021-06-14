@@ -1,0 +1,14 @@
+{
+  "name": "git-electron-v1",
+  "version": "1.0.0",
+  "description": "Un client github pour gérer ses fichiés",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.2"
+  }
+}
