@@ -15,6 +15,7 @@
   "dependencies": {
     "directory-tree": "^2.2.9",
     "electron-reload": "^1.5.0",
-    "electron-store": "^8.0.0"
+    "electron-store": "^8.0.0",
+    "simple-git": "^2.40.0"
   }
 }

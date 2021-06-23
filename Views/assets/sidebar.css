@@ -1,0 +1,47 @@
+#sidebar-tree{
+    padding-top: 15px;
+    height: calc(100vh - 45px)  !important;
+    color: whitesmoke;
+    border-right: 1px solid white;
+    padding-left: 10px;
+    width: 270px;
+}
+
+#folder-tree #root-folder-tree{
+    padding-left: 2px;
+}
+#folder-tree ul li{
+    list-style: none;
+}
+
+/* #git_status_btns{
+    /* display: none; */
+/* } */ 
+
+#git_status_btns li{
+    list-style-type: none;
+    list-style: none !important;
+}#git_status_btns li a{
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+}#git_status_btns li a .git-icon-notif{
+    font-size: 8.5px;
+    position: relative;
+    bottom: 10px;
+}#git_status_btns li a .git-icon-text{
+    font-size: 10px;
+    position: relative;
+    bottom: -10px;
+}
+
+#git-input-top{
+    width: 90%;
+    border: none !important;
+    font-size: 12px;
+}
+
+#folder-tree ul li a{
+    color: white;
+    text-decoration: none;
+}

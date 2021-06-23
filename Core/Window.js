@@ -4,6 +4,7 @@ const default_props = {
     width: 720,
     heihgt: 480,
     show: false,
+    // frame: false,
     webPreferences: {
         nodeIntegration: true,
     }
