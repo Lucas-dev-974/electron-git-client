@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git client project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/editor.css">
+    <link rel="stylesheet" href="./assets/sidebar.css">
+</head>
+<body>
+    <div id="navbar" class="d-flex justify-content-center bg-dark">
+        <h2 class="text-center title-light">Electron GitClient</h2>
+    </div>  
+    
+    <div class="d-flex flex-wrap editor">
+
+        <!-- SideBar Tree -->
+        <section id="sidebar-tree" class="bg-dark">
+            <div class="d-flex justify-content-start">
+                <a id="open_folder" click='open_folder' class=""><i class="fas fa-folder-open"></i></a>
+                <!-- Git buttons -->
+                <div id="git_btn_group_top">
+                    <ul id="git_status_btns">
+                        <li class="git-icons"> 
+                            <input type="text" id="git-input-top" class="form-control p-1 bg-dark">
+                        </li>
+                        <li class="git-icon"> 
+                            <a id="git-upload-files" href="#git-btns"><i class="fas fa-long-arrow-alt-up"></i><span class="git-icon-notif">300</span></a> 
+                        </li>
+                        <li class="git-icon" id="git-add-remote"> 
+                            <a href="#git-btns"><i class="fas fa-plus"></i></a> 
+                        </li>
+                    </ul>
+                    <button id="git-init-btns" class="btn btn-success">Initialisé</button>
+                </div>
+                <!--  -->
+            </div>
+            
+            <div id="folder-tree" class="mt-2">
+                
+            </div>            
+        </section>
+
+        <!-- Editor -->
+        <section id="editor-section" class="col bg-dark">
+            <div class="d-flex w-100 justify-content-center p-0 m-0">
+                <p id="alert-msg" class="col-11 text-center"></p>
+                <button id="close-alert" class="col-1 disable">Close</button>
+            </div>
+            <div id="editor-text">
+                <textarea id="editor-text-content" class="w-100 h-100 bg-dark"></textarea>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
