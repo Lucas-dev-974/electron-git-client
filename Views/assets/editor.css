@@ -1,0 +1,35 @@
+#navbar{
+    color: white;
+    height: 45px !important;
+    border-bottom: 1px solid white;
+}
+
+#editor-section{
+    
+    background: red;
+    padding-left: 10px;
+    /* padding-top: 10px; */
+}#editor-text{
+    height: 92vh;
+    color: white !important;
+}#editor-text-content{
+    color: white;
+}
+
+#alert-msg{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: white;
+}#alert-msg.error{
+    color: rgb(255, 102, 102);
+}#alert-msg.alert{
+    color: orange;
+}
+
+#close-alert{
+    background-color: transparent !important;
+}#close-alert.disable{
+    display: none;
+}#close-alert.active{
+    display: block;
+}
